@@ -12,7 +12,7 @@ vim usage more comfortable.
 .xinitrc
 --------
 ```
-File, used by X11 (if I recall that correctly) and iside 
+File, used by X11 (if I recall that correctly) and inside 
 there is also some config scripts and variables which will 
 make the experience much better and lighter.
 ```
