@@ -46,5 +46,20 @@ Add your folder with music in the end of the file. Where there is a 'playlist di
 --------------------------------------------------
 vim /etc/mpd.conf
 
+OPTIONAL.
+---
+You can make a command that will launch ncmcpp player in your terminal. By editing .bashrc file.
+---
+vim .bashrc
+
+Add and alias for launching ncmpcpp. Your alias goes instead the word 'music', just change to whatever you want.
+---
+
+alias music='ncmpcpp'
+
+Refresh environment variables.
+---
+source ~/.bashrc
+
 That's it.
 ---
