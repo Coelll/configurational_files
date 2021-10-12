@@ -16,6 +16,10 @@ File, used by X11 (if I recall that correctly) and inside
 there is also some config scripts and variables which will 
 make the experience much better and lighter.
 ```
+
+Mpd configuration.
+---
+
 Install the needed packages. You can ignore mpc.
 ----------------------------
 sudo pacman -S mpd ncmpcpp mpc
