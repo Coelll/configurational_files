@@ -1,0 +1,19 @@
+Install pacman-contrib.
+-----------------------
+
+pacman -S pacman-contrib
+
+Back up.
+--------
+
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
+
+Uncomment servers.
+------------------
+
+sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist.backup
+
+Rank the best 15 mirrors.
+-------------------------
+
+rankmirrors -n 15 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
