@@ -1,0 +1,12 @@
+# Unmount the drive.
+sudo umount /dev/sda1
+
+# Choose the usb file format.
+sudo mkfs.vfat /dev/sda1
+
+# Check the drive integrity.
+sudo fsck /dev/sda1
+
+# Don't forget to set a name for the newly-formated drive through gparted
+# or with a command.
+mlabel -i /dev/sda1 ::YourNameHere
