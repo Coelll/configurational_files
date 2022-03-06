@@ -1,0 +1,6 @@
+# A list of commands to remove unused packages on Arch
+# pacman -Qdtq shows a list of unnecessary dependencies
+pacman -Rs $(pacman -Qdtq)
+
+# Clear cache
+pacman -Scc

@@ -1,0 +1,7 @@
+patch -p1 < patchname.diff
+
+sudo cp config.def.h config.h
+
+sudo make clean install
+
+super + r
