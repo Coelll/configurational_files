@@ -17,3 +17,29 @@ Rank the best 15 mirrors.
 -------------------------
 
 rankmirrors -n 15 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
+
+OR
+---
+
+You can use a software called "reflector" in order to rank mirrors. There is a bunch of keys available for this specific piece of software, I'll try to cover some most useful of them here.
+---
+
+Install refelctor.
+---
+$ sudo pacman -S reflector rsync curl
+
+Backup the current mirrorlist.
+---
+$ sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+
+Get 15 mirrors, with https protocol, sort them by download rate and save.
+---
+$ sudo reflector --latest 15 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
+Get 15 mirrors from a certain country, sort them by download rate and save.
+---
+$ sudo reflector --verbose --country 'HERE'S A COUNTRY NAME' -l 15 --sort rate --save /etc/pacman.d/mirrorlist
+
+Get list of countries.
+---
+$ reflector --list-countries
