@@ -77,5 +77,22 @@ Refresh environment variables.
 source ~/.bashrc
 ```
 
+Arch dwm install.
+---
+A long set of commands with explanations on how to install arch linux, custom builds of dwm, st, dwm-status, dmenu and dwm-bar.
+(Customized by me.)
+
+Format usb drive.
+---
+As the name implies, set of commands on how to format a usb for use under linux OS's.
+
+Remove unused packages.
+---
+Commands that help deleting unused arch packages, keeping your system's SSD (nvme, hdd, whatever) relatively "unused-package-free".
+
+Rank mirrors.
+---
+Rank mirrors on arch, using "rankmirrors" or "reflector".
+
 That's it.
 ---
